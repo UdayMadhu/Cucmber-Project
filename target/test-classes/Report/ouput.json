@@ -1,0 +1,193 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-24T04:13:13.282Z",
+        "line": 20,
+        "name": "To book the hotel and Generate the order id",
+        "description": "",
+        "id": "verifying-adactin-hotel;to-book-the-hotel-and-generate-the-order-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19823223700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am in the adactin hotel login page",
+            "match": {
+              "location": "AdacinHotel.login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1157597500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Verify the login with \"udaymadhu\" and \"UdayMadhu@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"udaymadhu\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"UdayMadhu@123\"",
+                  "offset": 38
+                }
+              ],
+              "location": "AdacinHotel.loginDetails(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Verify Login Failure\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat com.adactinpom.SearchHotel.searchHotel(SearchHotel.java:103)\r\n\tat com.stepdef.AdacinHotel.searchHotel(AdacinHotel.java:51)\r\n\tat ✽.To search a hotel by \"London\",\"Hotel Sunshine\",\"Standard\",\"1 - One\",\"01/01/2022\",\"02/01/2022\",\"2 - Two\",\"1 - One\"(file:src/test/resources/Feature/Feature.feature:6)\r\n",
+              "duration": 103222600,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "To search a hotel by \"London\",\"Hotel Sunshine\",\"Standard\",\"1 - One\",\"01/01/2022\",\"02/01/2022\",\"2 - Two\",\"1 - One\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"London\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"Hotel Sunshine\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"Standard\"",
+                  "offset": 47
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 58
+                },
+                {
+                  "val": "\"01/01/2022\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"02/01/2022\"",
+                  "offset": 81
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 94
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 104
+                }
+              ],
+              "location": "AdacinHotel.searchHotel(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75100,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Select the hotel from the list",
+            "match": {
+              "location": "AdacinHotel.selectHotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 155000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Book a hotel by \"Uday\",\"Madhu\",\"Salem\",\"9876 2569 2365 5784\",\"VISA\",\"January\",\"2022\",\"9868\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Uday\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Madhu\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"Salem\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"9876 2569 2365 5784\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"VISA\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"January\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"2022\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"9868\"",
+                  "offset": 85
+                }
+              ],
+              "location": "AdacinHotel.book_a_hotel_by(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31500,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Check the Booking Confirmation \"Booking Confirmation\" and get order id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Booking Confirmation\"",
+                  "offset": 31
+                }
+              ],
+              "location": "AdacinHotel.bookConfirmation(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21400,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "cancel Booking",
+            "match": {
+              "location": "AdacinHotel.canceBooking()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Adactin Hotel",
+    "description": "",
+    "id": "verifying-adactin-hotel",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/Feature.feature",
+    "tags": []
+  }
+]
